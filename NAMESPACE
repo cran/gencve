@@ -1,0 +1,27 @@
+importFrom("stats", "aov", "binomial", "deviance", "fitted", "runif", "glm",
+           "predict.glm", "cor", "lm", "predict", "resid", "rnorm", "step",
+             "toeplitz", "var", "glm.fit")
+importFrom("graphics", "points", "title",  "dotchart")
+importFrom("grDevices", "rgb")
+importFrom("utils", "capture.output")
+importFrom("parallel","clusterSetRNGStream","makeCluster","clusterExport",
+ "clusterEvalQ","parSapply","stopCluster")
+
+#importFrom("MASS", "lda", "qda")
+#importFrom("rpart", "rpart")
+
+importFrom("lars", "lars", "print.lars",  "plot.lars",  "predict.lars",
+	"coef.lars", "summary.lars")
+importFrom("plus", "plus", "predict.plus")
+importFrom("glmnet", "glmnet", "predict.glmnet", "cv.glmnet")
+#importFrom("class", "knn", "knn.cv", "knn1")
+#importFrom("nnet", "multinom") - predict not exported!
+import("randomForest", "e1071", "C50", "MASS", "class", "nnet", "rpart")
+
+export("dShao", "gcv", "mse", "mae", "mape", "smape", "ShaoReg",
+ "yhat_lm", "yhat_step", "yhat_lars",  "yhat_plus", "yhat_nn",
+ "yhat_gel", "yhat_RF", "yhat_SVM", "regal", "featureSelect", "yh_kNN",
+ "misclassificationrate", "logloss", "rmix", "kNN_LOOCV", "kNN_MLE", "yh_lda",
+ "yh_qda", "yh_svm", "yh_RF", "yh_CART", "yh_C50", "yh_NB", "cgcv", "yh_NN",
+ "vifx", "yhat_CART", "yh_logistic","rdigitsBFOS","rxor")
+
